@@ -1,0 +1,23 @@
+[project]
+name = "paper-repro-social-planner"
+version = "0.1.0"
+description = "From-scratch computational reproduction of a GraphNet social planner paper"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "networkx",
+  "scipy",
+  "scikit-learn",
+  "pyyaml",
+  "tqdm",
+  "pytest",
+  "torch",
+  "matplotlib"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"
